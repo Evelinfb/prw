@@ -14,7 +14,7 @@ create table usuario (
 	id_Usuario		int 		not null auto_increment,
     nome_usuario	varchar(100)	not null,
     email_usuario	varchar(100)    not null,
-    telefone_usuario	varchar(30)  not null,
+    fone_usuario	varchar(30)  not null,
     primary key (id_usuario)
 );
     
