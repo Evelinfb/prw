@@ -11,7 +11,7 @@ use projeto01;
 
 -- Criação da tabela usuario 
 create table usuario (
-	id_Usuario		int 		not null auto_increment,
+	id_usuario		int 		not null auto_increment,
     nome_usuario	varchar(100)	not null,
     email_usuario	varchar(100)    not null,
     fone_usuario	varchar(30)  not null,
