@@ -16,7 +16,7 @@
 </head>
 <body>
     <h1>Alteração de Usuario</h1>
-    <form action="cadastro_usuario.php" method="POST">
+    <form action="altera_usuario_exe.php" method="POST">
         <div>
             <label for="nome">Nome</label>
             <input type="nome_usuario" name="nome_usuario" size="50" id="nome_usuario" 
@@ -32,7 +32,11 @@
             <input type="fone_usuario" name="fone_usuario" size="30" id="fone_usuario" 
             value="<?php echo $row[ 'fone_usuario'] ?>" placeholder= "Digite o telefone">
         </div>
-        <button type="submit">Enviar</button>
+        <div class="form-item">
+            <button type="submit">Enviar</button>
+            <a href= 'index.php'>Voltar</a>
+        </div>
+        <input name= "id_usuario" type="hidden" value="<?php echo $row[ 'id_usuario']?>">
 
     </form>
     
