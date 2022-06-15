@@ -5,21 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Fluxo de Caixa</title>
-    <link rel="stylesheet">
 </head>
 <body>
     <h1>Consulta de Fluxo de Caixa</h1>
-    <form action="cadastro_fluxo_caixa.php" enctype='multipart/form-data' method="POST">
+    <form action="consulta_fluxo_caixa.php" method="POST">
         <div>
-            <label for="tipo">Tipo de consulta: </label>
-            <SELECT NAME = "tipo" VALUE = "valor default" SIZE = "3">
-            
-                <OPTION value="Saldo">Saldo Total</OPTION>
-                <OPTION value="Total">Total Saidas</OPTION>
-                <OPTION value="Totalen">Total Entradas</OPTION></SELECT>
+            <INPUT TYPE = "radio" NAME = "tipo" VALUE = "saldo"> Saldo Total
+            <INPUT TYPE = "radio" NAME = "tipo" VALUE = "saida"> Total Saídas
+            <INPUT TYPE = "radio" NAME = "tipo" VALUE = "entrada"> Total Entradas
         </div>
         <div class="form-item">
-            <a href='consulta_fluxo_caixa.php'> Enviar</a>
+            <button type="submit">Enviar</button>
+            <a href='index.php'> Voltar</a>
         </div>      
 
     </form>

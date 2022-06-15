@@ -6,16 +6,16 @@
     $valor = $_POST[ 'valor'];
     $historico = $_POST[ 'historico'];
     $cheque = $_POST[ 'cheque'];
-    
+
     echo "<h1> Alterção de dados </h1>";
     echo "<p> Data: " . $data . "<p>";
 
     $sql = "UPDATE fluxo_caixa SET
         data='".$data."',
         tipo='".$tipo."',
-        valor='".$valor."',
-        historico='".$historico."',
-        cheque='".$cheque."'
+        valor='".$valor."'
+        tipo='".$historico."',
+        valor='".$cheque."'
       WHERE id=".$id;
     
     $result = mysqli_query($con, $sql);

@@ -31,12 +31,11 @@
                 echo "<td>" . $row['valor'] . "</td>";
                 echo "<td>" . $row['historico'] . "</td>";
                 echo "<td>" . $row['cheque'] . "</td>";
-                echo "<td><a href='excluir_fluxo_caixa.php?id=".$row[ 'id']."'>Excluir</a></td>";
+                echo "<td><a href='exclui_fluxo_caixa.php?id=".$row[ 'id']."'>Excluir</a></td>";
                 echo "</tr>"; 
 
             }
         ?>
     </table>
-    <a href='index.php'> Voltar</a>
 </body>
 </html>

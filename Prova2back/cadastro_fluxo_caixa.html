@@ -9,14 +9,16 @@
 </head>
 <body>
     <h1>Cadastro de Fluxo de caixa</h1>
-    <form action="cadastro_fluxo_caixa.php" method="POST">
+    <form action="cadastro_fluxo_caixa.php" enctype='multipart/form-data' method="POST">
         <div>
-            <label for="nome">Data:</label>
-            <input type="date" name="data" size="50" id="data">
+            <label for="nome">Data: </label>
+            <input type="data" name="data" size="50" id="data">
         </div>
         <div>
-            <INPUT TYPE = "radio" NAME = "tipo" VALUE = "entrada"> Entrada  
-            <INPUT TYPE = "radio" NAME = "tipo" VALUE = "saida"> Saída
+            <INPUT TYPE = "radio" NAME = "Tipo: "
+            VALUE = "Entrada"> Entrada  
+            <INPUT TYPE = "radio" NAME = "Tipo: "
+            VALUE = "Saida"> Saída
         </div>
         <div>
             <label for="valor">Valor: </label>
@@ -28,10 +30,10 @@
         </div>
         <div>
             <label for="cheque">Cheque: </label>
-            <SELECT NAME = "cheque" VALUE = "valor default">
+            <SELECT NAME = "cheque" VALUE = "valor default" SIZE = "3">
+            
                 <OPTION value="Sim">Sim</OPTION>
-                <OPTION value="Nao">Não</OPTION>
-            </SELECT>
+                <OPTION value="Nao">Não</OPTION></SELECT>
         </div>
         <div class="form-item">
             <input id="btn" type="submit" value="Enviar" >

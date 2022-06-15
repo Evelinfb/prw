@@ -22,4 +22,3 @@
 	else
 		echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
 ?>
-<a href='index.php'> Voltar</a>

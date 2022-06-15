@@ -21,14 +21,14 @@
     <form action="altera_fluxo_caixa_exe.php" method="POST"  enctype='multipart/form-data'>
         <div class="form-item">
             <label for="nome">Data: </label>
-            <input type="date" name="data" size="50" id="data"
+            <input type="data" name="data" size="50" id="data"
             value="<?php echo $row[ 'data'] ?>" placeholder= "Digite a data">
         </div>
         <div>
-            <INPUT TYPE = "radio" NAME = "tipo"
-            VALUE = "entrada"> Entrada  
-            <INPUT TYPE = "radio" NAME = "tipo"
-            VALUE = "saida"> Saída
+            <INPUT TYPE = "radio" NAME = "Tipo: "
+            VALUE = "Entrada"> Entrada  
+            <INPUT TYPE = "radio" NAME = "Tipo: "
+            VALUE = "Saida"> Saída
         </div>
         <div>
             <label for="valor">Valor: </label>
@@ -38,11 +38,11 @@
         <div>
             <label for="historico">Histórico: </label>
             <input type="historico" name="historico" size="30" id="historico"
-            value="<?php echo $row[ 'historico'] ?>"> 
+            value="<?php echo $row[ 'fone_usuario'] ?>" placeholder= "Digite o telefone"> 
         </div>
         <div>
             <label for="cheque">Cheque: </label>
-            <SELECT NAME = "cheque" VALUE = "valor default">
+            <SELECT NAME = "cheque" VALUE = "valor default" SIZE = "3">
             
                 <OPTION value="Sim">Sim</OPTION>
                 <OPTION value="Nao">Não</OPTION></SELECT>
